@@ -86,7 +86,6 @@
                                 <h3>Developers' <br>
                                     Conference <br>
                                     2021 K'LA</h3>
-                                <a href="#" class="boxed-btn-white">Add to your Calendar?</a>
                             </div>
                         </div>
                     </div>
@@ -106,13 +105,11 @@
                     <div class="col-xl-3 col-md-6 col-lg-3">
                         <div class="single_date">
                             <i class="ti-alarm-clock"></i>
-                            <span>05TH - 06TH May 2021</span>
+                            <span>05TH - 08TH May 2021</span>
                         </div>
                     </div>
 
-                    <div class="col-xl-5 col-md-12 col-lg-5">
-                        <span id="clock"></span>
-                    </div>
+                   
 
                 </div>
             </div>
@@ -121,7 +118,7 @@
     <!-- slider_area_end -->
 
     <!-- about_area_start -->
-    <div class="about_area">
+    <div style="padding-bottom: 5px; margin-bottom: 5px;" class="about_area">
         <div class="shape-1 d-none d-xl-block">
             <img src="img/about/shap1.png" alt="">
         </div>
@@ -132,7 +129,7 @@
             <div class="row align-items-center">
                 <div class="col-xl-6 col-md-6">
                     <div class="about_thumb">
-                        <img src="img/about/about.png" alt="">
+                        <img src="{% static 'img/about/about.png' %}" alt="">
                     </div>
                 </div>
                 <div class="col-xl-5 offset-xl-1 col-md-6">
@@ -148,7 +145,12 @@
                              within the Computing and Technology<br> 
                             Industry
                             </p>
-                                    </div>
+                         </div>
+
+                         <p style="font-size: large; color:orangered; font-style: italic; text-shadow: 1px 1px yellowgreen; font-family: Arial, Helvetica, sans-serif;">'Learn Continually, <br> there's always "one more thing" to learn' <br> - Steve Jobs</p>
+                         <div class = "about_info">
+                         <p>The Computing and Technology department of Uganda Christian University, in proud partnership with Google inc, is proud to present a series of 4-day conferences. <br> All interested parties are encouraged to register and attach a Research paper(optional) <br> Kindly endevour to register on time </p>
+                        </div>
                 </div>
             </div>
         </div>
@@ -174,7 +176,7 @@
                 <div class="col-xl-5 col-md-6">
                     <div class="single_speaker">
                         <div class="speaker_thumb">
-                            <img src="img/speakers/1.png" alt="">
+                            <img src="{% static 'img/speakers/1.png' %}" alt="">
                             <div class="hover_overlay">
                                 <div class="social_icon">
                                     <a href="#"><i class="fa fa-facebook"></i></a>
@@ -184,12 +186,13 @@
                             </div>
                         </div>
                         <div class="speaker_name text-center">
-                            
+                            <h3>Ssewaggude Frank</h3>
+                            <p>Motivational Speaker</p>
                         </div>
                     </div>
                     <div class="single_speaker">
                         <div class="speaker_thumb">
-                            <img src="{% static 'img/bk.png' %}" alt="">
+                            <img style="width:70%;" src="{% static 'img/bk.png' %}" alt="">
                             <div class="hover_overlay">
                                 <div class="social_icon">
                                     <a href="#"><i class="fa fa-facebook"></i></a>
@@ -207,7 +210,7 @@
                 <div class="col-xl-5 offset-xl-2 col-md-6">
                     <div class="single_speaker">
                         <div class="speaker_thumb">
-                            <img src="{% static 'img/jk.JPG' %}" alt="">
+                            <img style="height: 500px; width: 95%;" src="{% static 'img/jk.JPG' %}" alt="">
                             <div class="hover_overlay">
                                 <div class="social_icon">
                                     <a href="#"><i class="fa fa-facebook"></i></a>
@@ -223,7 +226,7 @@
                     </div>
                     <div class="single_speaker">
                         <div class="speaker_thumb">
-                            <img src="{% static 'img/ap.jpeg' %}" alt="">
+                            <img src="{% static 'img/panto.jpg' %}" alt="">
                             <div class="hover_overlay">
                                 <div class="social_icon">
                                     <a href="#"><i class="fa fa-facebook"></i></a>
@@ -292,7 +295,7 @@
                 <div class="col-xl-12">
                     <div class="serction_title_large mb-95">
                         <h3>
-                            Frequently Asked!!
+                            FAQS
                         </h3>
                     </div>
                 </div>
@@ -306,15 +309,15 @@
                                     <button class="btn btn-link collapsed" data-toggle="collapse"
                                         data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
 
-                                        <img src="img/barnd/info.png" alt=""> Is WordPress hosting worth it?
+                                        <img src="img/barnd/info.png" alt=""> Where is the Venue?
                                     </button>
                                 </h5>
                             </div>
                             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion"
                                 style="">
                                 <div class="card-body">
-                                    Our set he for firmament morning sixth subdue darkness creeping gathered divide our
-                                    let god moving. Moving in fourth air night bring upon
+                                    Uganda Christian University,<br>
+                                     Plot 67-173, Bishop Tucker Road,<br> Mukono
                                 </div>
                             </div>
                         </div>
@@ -323,16 +326,15 @@
                                 <h5 class="mb-0">
                                     <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"
                                         aria-expanded="true" aria-controls="collapseOne">
-                                        <img src="img/barnd/info.png" alt="">What are the advantages <span>of WordPress
-                                            hosting over shared?</span>
+                                        <img src="img/barnd/info.png" alt=""> Do I need<span> a ticket for this event?</span>
                                     </button>
                                 </h5>
                             </div>
                             <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
                                 data-parent="#accordion" style="">
                                 <div class="card-body">
-                                    Our set he for firmament morning sixth subdue darkness creeping gathered divide our
-                                    let god moving. Moving in fourth air night bring upon
+                                    This event is completely free of charge. <br>
+                                    All interested parties are welcome.
                                 </div>
                             </div>
                         </div>
@@ -342,15 +344,14 @@
                                     <button class="btn btn-link collapsed" data-toggle="collapse"
                                         data-target="#collapseThree" aria-expanded="false"
                                         aria-controls="collapseThree">
-                                        <img src="img/barnd/info.png" alt=""> Where the Venue?
+                                        <img src="img/barnd/info.png" alt=""> How do i register?
                                     </button>
                                 </h5>
                             </div>
                             <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
                                 data-parent="#accordion" style="">
                                 <div class="card-body">
-                                    Our set he for firmament morning sixth subdue darkness creeping gathered divide our
-                                    let god moving. Moving in fourth air night bring upon
+                                   Click on the register button at the top of the page to be redirected to the registration form
                                 </div>
                             </div>
                         </div>
@@ -359,16 +360,16 @@
                                 <h5 class="mb-0">
                                     <button class="btn btn-link collapsed" data-toggle="collapse"
                                         data-target="#collapse_4" aria-expanded="false" aria-controls="collapse_4">
-                                        <img src="img/barnd/info.png" alt=""> How can I attend <span>the Event from
-                                            Asia?</span>
+                                        <img src="img/barnd/info.png" alt=""> My question has not been addressed. <span>Whom can I contact?</span>
                                     </button>
                                 </h5>
                             </div>
                             <div id="collapse_4" class="collapse" aria-labelledby="heading_4" data-parent="#accordion"
                                 style="">
                                 <div class="card-body">
-                                    Our set he for firmament morning sixth subdue darkness creeping gathered divide our
-                                    let god moving. Moving in fourth air night bring upon
+                                   
+                                   <p>info@ucu.ac.ug </p>
+                                   <p> +256312350800</p>
                                 </div>
                             </div>
                         </div>
@@ -419,9 +420,9 @@
                                         Venue
                                 </h3>
                                 <p>
-                                    200, D-block, Green lane USA <br>
-                                    edumark@contact.com <br>
-                                    +10 367 467 8934
+                                    Uganda Christian University, Plot 67-173, Bishop Tucker Road, Mukono <br>
+                                    info@ucu.ac.ug <br>
+                                    +256312350800
                                     
                                 </p>
                             </div>

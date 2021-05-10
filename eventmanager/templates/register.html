@@ -125,7 +125,7 @@
                         <h2 class="contact-title">Register</h2>
                     </div>
                     <div class="col-lg-8">
-                        <form class="form-contact contact_form" action="{% url 'register' %}" method="post" id="contactForm" novalidate="novalidate">
+                        <form class="form-contact contact_form" action="{% url 'register' %}" method="post" id="contactForm" enctype="multipart/form-data">
                             {% csrf_token %}
                             <div class="row">
                                 
@@ -154,18 +154,18 @@
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group">
-                                        <input class="form-control valid" name="topic" id="email" type="email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter topic to discuss'" placeholder="topic">
+                                        <input class="form-control valid" name="topic" id="email" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter topic to discuss'" placeholder="topic">
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group">
-                                        <input class="form-control valid" name="description" id="email" type="email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter description'" placeholder="Description">
+                                        <input class="form-control valid" name="description" id="email" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter description'" placeholder="Description">
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group">
                                         <p>Submit your Papers here</p>
-                                        <input class="form-control valid" name="file" id="file" type="file" >
+                                        <input class="form-control valid" name="file" id="file" type="file" required=false>
                                     </div>
                                 </div>
                             </div>
@@ -220,9 +220,9 @@
                                         Venue
                                 </h3>
                                 <p>
-                                    200, D-block, Green lane USA <br>
-                                    edumark@contact.com <br>
-                                    +10 367 467 8934
+                                    Uganda Christian University, Plot 67-173, Bishop Tucker Road, Mukono <br>
+                                    info@ucu.ac.ug <br>
+                                    +256312350800
                                     
                                 </p>
                             </div>
@@ -268,13 +268,13 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
         <script src="{% static 'js/plugins.js' %}"></script>
     
         <!--contact js-->
-        <script src="{% static 'js/contact.js' %}"></script>
-        <script src="{% static 'js/jquery.ajaxchimp.min.js' %}"></script>
-        <script src="{% static 'js/jquery.form.js' %}"></script>
-        <script src="{% static 'js/jquery.validate.min.js' %}"></script>
-        <script src="{% static 'js/mail-script.js' %}"></script>
+        <!-- <script src="{% static 'js/contact.js' %}"></script> -->
+        <!-- <script src="{% static 'js/jquery.ajaxchimp.min.js' %}"></script> -->
+        <!-- <script src="{% static 'js/jquery.form.js' %}"></script> -->
+        <!-- <script src="{% static 'js/jquery.validate.min.js' %}"></script> -->
+        <!-- <script src="{% static 'js/mail-script.js' %}"></script> -->
     
-        <script src="{% static 'js/main.js' %}"></script>
+        <!-- <script src="{% static 'js/main.js' %}"></script> -->
     
     </body>
     

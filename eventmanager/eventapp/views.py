@@ -1,11 +1,13 @@
 from django.shortcuts import render
 from .models import Participants,Contact,Program
+from django.core.files.storage import FileSystemStorage
 
 def index(request):
 
     
     return render(request, 'index.html')
 def register(request):
+    folder='static/files'
     if "register" in request.POST:
         name = request.POST["name"]
         email = request.POST["email"]
@@ -13,7 +15,11 @@ def register(request):
         speaker = request.POST["speaker"]
         topic = request.POST["topic"]
         description = request.POST["description"]
-
+        file = request.FILES['file']
+        fs = FileSystemStorage(location=folder)
+        filename = fs.save(file.name,file)
+        file_url = fs.url(filename)
+        print(file_url)
         register = Participants(
                 name              =name,
                 email             =email,
@@ -21,6 +27,7 @@ def register(request):
                 speaker           =speaker,
                 topic             =topic,
                 description =description,
+                file = file,
     )
         register.save()
         print("Registered successfully.....")

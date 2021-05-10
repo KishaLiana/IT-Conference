@@ -14,6 +14,7 @@ class Participants(models.Model):
     speaker = models.CharField(max_length=150, choices=choice,default='Attendee') 
     topic = models.CharField(max_length=250)
     description = models.TextField(max_length=250)
+    file = models.FileField(null=True, blank=True, upload_to='file/')
     
     def __str__(self):
         return self.name 

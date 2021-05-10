@@ -1385,8 +1385,8 @@ h3 {
 
 /* line 1, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_about.scss */
 .about_area {
-  padding-top: 200px;
-  padding-bottom: 100px;
+  padding-top: 100px;
+  padding-bottom: 5px;
   position: relative;
 }
 
@@ -1415,7 +1415,7 @@ h3 {
   /* line 1, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_about.scss */
   .about_area {
     padding-top: 40px;
-    padding-bottom: 30px;
+    padding-bottom: 5px;
   }
 }
 
@@ -1423,7 +1423,7 @@ h3 {
   /* line 1, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_about.scss */
   .about_area {
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 5px;
   }
 }
 
@@ -1485,7 +1485,7 @@ h3 {
 
 /* line 65, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_about.scss */
 .about_area .about_info .about_list {
-  margin-bottom: 50px;
+  margin-bottom: 5px;
   margin-top: 34px;
 }
 
@@ -1528,13 +1528,13 @@ h3 {
   line-height: 28px;
   color: #808080;
   margin-top: 30px;
-  margin-bottom: 60px;
+  margin-bottom: 5px;
 }
 
 @media (max-width: 767px) {
   /* line 93, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_about.scss */
   .about_area .about_info p {
-    margin-bottom: 30px;
+    margin-bottom: 5px;
   }
 }
 
@@ -1674,14 +1674,14 @@ h3 {
 
 /* line 1, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_speakers.scss */
 .speakers_area {
-  padding-top: 100px;
+  padding-top: 50px;
   position: relative;
   padding-bottom: 105px;
 }
 
 /* line 5, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_speakers.scss */
 .speakers_area.inc_padd {
-  padding-top: 200px;
+  padding-top: 50px;
 }
 
 @media (max-width: 767px) {
@@ -1696,7 +1696,7 @@ h3 {
   /* line 5, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_speakers.scss */
   .speakers_area.inc_padd {
     padding-bottom: 100px;
-    padding-top: 70px;
+    padding-top: 40px;
   }
 }
 
@@ -1714,7 +1714,7 @@ h3 {
   font-weight: 700;
   position: absolute;
   right: 0;
-  top: 100px;
+  top: 50px;
   color: #F3F3F3;
 }
 
