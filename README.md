@@ -1,5 +1,4 @@
 # IT-Conference
-# IT-Conference
 
 conference management system
 
